@@ -47,7 +47,7 @@ function verifVictory() {
         if(valeur1 === "" || valeur2 === "" || valeur3 === "") {
             continue
         }
-        if (valeur1 === valeur2 && valeur2 === valeur3) {
+        if (valeur1 === valeur2 && valeur2 === valeur3) { 
             winTurn = true
             break
         }
@@ -73,5 +73,5 @@ function retry(){
     inGame = true
     etatGame = ["", "", "", "", "", "", "", "", ""]
     statut.innerHTML = tourJoueur()
-    document.querySelectorAll(".case").forEach(cell => cell.innerHTML = "")
+    document.querySelectorAll(".case").forEach(element => element.innerHTML = "")
 }
